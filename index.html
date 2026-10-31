@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LANDGRIP TILES ADHESIVE</title>
+<style>
+:root{--bg:#f3f6fc;--sf:#fff;--tx:#0e1a33;--mu:#5a6a87;--pr:#1257d6;--hd:#0b1f4d;--bd:#d8e0ee;--ok:#168a4a;--bad:#c62828;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0a1020;--sf:#121a2e;--tx:#e8eefc;--mu:#9aa9c9;--pr:#4b8dff;--hd:#060b18;--bd:#25314f}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0a1020;--sf:#121a2e;--tx:#e8eefc;--mu:#9aa9c9;--pr:#4b8dff;--hd:#060b18;--bd:#25314f}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif}
+header{background:var(--hd);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.bar{display:flex;gap:10px;align-items:center;padding:10px 14px;max-width:1100px;margin:auto;flex-wrap:wrap}
+.logo{font-weight:800;letter-spacing:1px;font-size:20px;cursor:pointer}.logo b{color:#5aa2ff}.logo small{display:block;font-size:9px;letter-spacing:3px;font-weight:600;color:#9db6e8}
+.bar input{flex:1;min-width:140px;padding:9px 12px;border-radius:6px;border:0;font-size:15px}
+button,.btn{background:var(--pr);color:#fff;border:0;border-radius:6px;padding:9px 14px;font:inherit;font-weight:600;cursor:pointer}
+button.g{background:transparent;border:1px solid var(--bd);color:var(--tx)}button.r{background:var(--bad)}button.o{background:var(--ok)}button.h{background:#ffffff1f}
+main{max-width:1100px;margin:auto;padding:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px}.chip{white-space:nowrap;padding:6px 14px;border-radius:99px;background:var(--sf);border:1px solid var(--bd);cursor:pointer}.chip.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.hero{background:linear-gradient(120deg,#0b1f4d,#1257d6);color:#fff;border-radius:10px;padding:22px;margin-bottom:14px}.hero h1{margin:0 0 4px;font-size:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column}
+.card img,.ph{width:100%;aspect-ratio:1;object-fit:cover;background:#dfe7f6;display:flex;align-items:center;justify-content:center;color:var(--mu)}
+.card div{padding:10px}.pr{font-weight:700;font-size:16px}.old{color:var(--mu);text-decoration:line-through;font-size:13px;margin-left:6px}.off{color:var(--ok);font-size:13px;font-weight:600;margin-left:6px}
+.box{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;margin-bottom:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:640px){.two{grid-template-columns:1fr}}
+label{display:block;font-size:13px;color:var(--mu);margin:8px 0 2px}
+input,select,textarea{width:100%;padding:9px;border:1px solid var(--bd);border-radius:6px;background:var(--bg);color:var(--tx);font:inherit}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sp{justify-content:space-between}
+.tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.tag{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--bd)}
+.s-Delivered{background:#d7f3e3;color:#0b6b37}.s-Pending{background:#fff1c9;color:#7a5800}.s-Rejected,.s-Cancelled{background:#fbd9d9;color:#8f1d1d}.s-Accepted,.s-Shipped{background:#d9e6ff;color:#0f3f9c}
+.thumbs{display:flex;gap:6px;margin-top:8px}.thumbs img{width:56px;height:56px;object-fit:cover;border-radius:6px;border:1px solid var(--bd);cursor:pointer}
+.big{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px}
+.bars{display:flex;gap:6px;align-items:flex-end;height:150px}.bars div{flex:1;background:var(--pr);border-radius:4px 4px 0 0;min-height:2px;position:relative}.bars span{position:absolute;bottom:-18px;left:0;font-size:10px;color:var(--mu)}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:12px}.stats .box{margin:0}.stats b{font-size:20px;display:block}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%}td,th{padding:6px 8px;border-bottom:1px solid var(--bd);text-align:left;font-size:14px}
+.muted{color:var(--mu)}#toast{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--hd);color:#fff;padding:10px 16px;border-radius:8px;display:none;z-index:9}
+footer{text-align:center;color:var(--mu);padding:20px;font-size:13px}
+</style></head>
+<body>
+<header><div class="bar">
+<div class="logo" onclick="go('home')">LAND<b>GRIP</b><small>TILES ADHESIVE</small></div>
+<input id="q" placeholder="Search tile adhesives, grouts, chemicals…" oninput="Q=this.value;if(V!='home')go('home');else render()">
+<button class="h" onclick="go('cart')">🛒 Cart (<span id="cc">0</span>)</button>
+<button class="h" onclick="go('contact')">Contact</button>
+<button class="h" id="adm" style="display:none" onclick="go('admin')">Admin</button>
+</div></header>
+<main id="m"></main>
+<footer>© LANDGRIP TILES ADHESIVE · Rajkot, Gujarat, India · 8866745452 · Cash on Delivery only</footer>
+<div id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),E=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const R=n=>'₹'+Number(n||0).toLocaleString('en-IN'),ST=['Pending','Accepted','Rejected','Shipped','Delivered','Cancelled'];
+let unlocked=false,db,assets,user,dl,admin=false,P=[],O=[],cfg={},cart={},V='home',Q='',CAT='All',AT='orders',ed=null,last=null,uid=null,lastOrder=null;
+const img=p=>(p.imgs&&p.imgs[0])?'/_blob/'+p.imgs[0]:'';
+function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display='none',2800)}
+function go(v){V=v;scrollTo(0,0);render()}
+const price=p=>Number(p.price)||0,disc=p=>p.mrp>p.price?Math.round(100-100*p.price/p.mrp):0;
+const inStock=p=>p.available!==false&&Number(p.stock)>0;
+function render(){
+ $('#cc').textContent=Object.values(cart).reduce((a,b)=>a+b,0);$('#adm').style.display='';
+ const m=$('#m');
+ if(!db){m.innerHTML='<div class="box"><b>Store is loading…</b><p class="muted">If this stays blank, please sign in to claude.ai and reopen the link (the store database needs a signed-in session).</p></div>';return}
+ if(V=='home')m.innerHTML=home();else if(V.startsWith('p:'))m.innerHTML=detail(V.slice(2));else if(V=='cart')m.innerHTML=cartV();
+ else if(V=='checkout')m.innerHTML=checkout();else if(V=='done')m.innerHTML=done();else if(V=='contact')m.innerHTML=contact();else if(V=='admin')m.innerHTML=unlocked?(admin?adminV():'<div class="box">Admin access mate owner claude.ai account thi sign-in karo.</div>'):`<div class="box" style="max-width:360px;margin:auto"><h3 style="margin-top:0">Admin login</h3><label>Username</label><input id="au" value="Admin"><label>Password</label><input id="ap" type="password" onkeydown="if(event.key=='Enter')unlock()"><br><br><button onclick="unlock()">Login</button></div>`;else m.innerHTML=home();
+}
+function home(){
+ const cats=['All',...new Set(P.map(p=>p.cat).filter(Boolean))],q=Q.toLowerCase();
+ const L=P.filter(p=>(CAT=='All'||p.cat==CAT)&&(!q||(p.name+' '+(p.desc||'')+' '+(p.cat||'')).toLowerCase().includes(q)));
+ return `<div class="hero"><h1>Premium Tile Adhesives &amp; Building Chemicals</h1><div>Strong grip. Lasting finish. Cash on Delivery across India.</div></div>
+ <div class="chips">${cats.map(c=>`<div class="chip ${c==CAT?'on':''}" onclick="CAT='${E(c).replace(/'/g,'')}';render()">${E(c)}</div>`).join('')}</div>
+ ${L.length?`<div class="grid">${L.map(card).join('')}</div>`:`<div class="box muted">${P.length?'No products match your search.':'Products will appear here once the owner adds them.'}</div>`}`}
+function card(p){const i=img(p);return `<div class="card" onclick="go('p:${p.id}')">${i?`<img src="${i}" alt="">`:'<div class="ph">No image</div>'}<div><div>${E(p.name)}</div><div><span class="pr">${R(price(p))}</span>${disc(p)?`<span class="old">${R(p.mrp)}</span><span class="off">${disc(p)}% off</span>`:''}</div>${inStock(p)?'':'<div style="color:var(--bad);font-size:13px">Out of stock</div>'}</div></div>`}
+function detail(id){const p=P.find(x=>x.id==id);if(!p)return home();
+ return `<button class="g" onclick="go('home')">← Back</button><div class="box two" style="margin-top:10px"><div>${img(p)?`<img class="big" id="bg" src="${img(p)}">`:'<div class="ph big">No image</div>'}<div class="thumbs">${(p.imgs||[]).map(i=>`<img src="/_blob/${i}" onclick="$('#bg').src=this.src">`).join('')}</div></div>
+ <div><h2 style="margin-top:0">${E(p.name)}</h2><div><span class="pr" style="font-size:24px">${R(price(p))}</span>${disc(p)?`<span class="old">${R(p.mrp)}</span><span class="off">${disc(p)}% off</span>`:''}</div>
+ <p style="white-space:pre-wrap">${E(p.desc)}</p><p class="muted">${inStock(p)?`In stock (${p.stock} available)`:'Currently out of stock'} · Cash on Delivery</p>
+ <div class="row"><button ${inStock(p)?'':'disabled'} onclick="add('${p.id}')">Add to cart</button><button class="o" ${inStock(p)?'':'disabled'} onclick="add('${p.id}');go('checkout')">Buy now</button></div></div></div>`}
+function add(id){const p=P.find(x=>x.id==id);cart[id]=Math.min((cart[id]||0)+1,Number(p.stock)||1);toast('Added to cart');render()}
+const items=()=>Object.keys(cart).map(id=>({p:P.find(x=>x.id==id),q:cart[id]})).filter(x=>x.p);
+const total=()=>items().reduce((a,x)=>a+price(x.p)*x.q,0);
+function cartV(){const L=items();if(!L.length)return '<div class="box">Your cart is empty. <a href="#" onclick="go(\'home\');return false">Continue shopping</a></div>';
+ return `<h2>Shopping cart</h2>${L.map(x=>`<div class="box row sp"><div><b>${E(x.p.name)}</b><div class="muted">${R(price(x.p))} each</div></div><div class="row"><button class="g" onclick="qty('${x.p.id}',-1)">−</button><b>${x.q}</b><button class="g" onclick="qty('${x.p.id}',1)">+</button><b style="min-width:80px;text-align:right">${R(price(x.p)*x.q)}</b></div></div>`).join('')}
+ <div class="box row sp"><b>Total: ${R(total())}</b><button onclick="go('checkout')">Proceed to checkout</button></div>`}
+function qty(id,d){const p=P.find(x=>x.id==id);cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];else if(cart[id]>p.stock)cart[id]=p.stock;render()}
+function checkout(){if(!items().length)return cartV();
+ return `<h2>Checkout</h2><div class="box"><b>Payment: Cash on Delivery only</b><div class="muted">Pay in cash when your order arrives.</div></div><div class="box two"><div>
+ <label>Phone number</label><input id="f_p" inputmode="tel" maxlength="10"><label>Pincode</label><input id="f_z" inputmode="numeric" maxlength="6"><label>Complete address</label><textarea id="f_a" rows="3"></textarea></div>
+ <div><b>Order summary</b>${items().map(x=>`<div class="row sp"><span>${E(x.p.name)} × ${x.q}</span><span>${R(price(x.p)*x.q)}</span></div>`).join('')}<hr><div class="row sp"><b>Total (COD)</b><b>${R(total())}</b></div><br><button class="o" style="width:100%" onclick="place()">Place order (Cash on Delivery)</button></div></div>`}
+async function place(){
+ const v=i=>$('#f_'+i).value.trim(),n='',p=v('p'),z=v('z'),s='',c='',a=v('a');
+ if(!/^\d{10}$/.test(p)||!/^\d{6}$/.test(z)||a.length<8)return toast('Phone (10 digit), pincode (6 digit) ane address barabar bharo.');
+ const id='LG'+new Date().toISOString().slice(2,10).replace(/-/g,'')+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+ const o={id,name:n,phone:p,pin:z,state:s,city:c,addr:a,pay:'COD',status:'Pending',at:new Date().toISOString(),total:total(),items:items().map(x=>({pid:x.p.id,name:x.p.name,price:price(x.p),q:x.q}))};
+ if(!uid)return toast('Please sign in to place your order.');o.uid=uid;
+ try{await db.doc('orders/'+uid+'/o/'+id).set(o);await db.doc('orders/'+uid).set({last:id,at:o.at});lastOrder=o;cart={};go('done')}catch(e){toast('Could not place order: '+(e.message||e.code||'please sign in and retry'))}}
+function done(){const o=lastOrder;if(!o)return home();return `<div class="box"><h2 style="color:var(--ok);margin-top:0">✔ Order placed!</h2><p>Your order ID: <b>${E(o.id)}</b></p><p>Total to pay on delivery: <b>${R(o.total)}</b></p><p>We will call you on ${E(o.phone)} to confirm. Thank you for choosing LANDGRIP.</p><button onclick="go('home')">Continue shopping</button></div>`}
+function contact(){const mp=/^https:\/\//.test(cfg.maps||'')?cfg.maps:'';return `<h2>Contact us</h2><div class="box"><b>LANDGRIP TILES ADHESIVE</b><p>Rajkot, Gujarat, India<br>Phone: <a href="tel:8866745452">8866745452</a><br>Payment: Cash on Delivery only</p>${mp?`<a class="btn" href="${E(mp)}" target="_blank" rel="noopener">📍 Open in Google Maps</a>`:'<span class="muted">Map location will be added soon.</span>'}</div>`}
+/* ---------- admin ---------- */
+async function unlock(){const u=$('#au').value.trim(),h=$('#ap').value.trim();
+ if(u=='Admin'&&h=='45452'){unlocked=true;render()}else toast('Username ya password khotu che.')}
+const del=o=>o.status=='Delivered';
+function adminV(){return `<h2>Admin panel</h2><div class="tabs">${['orders','products','sales','settings'].map(t=>`<button class="${AT==t?'':'g'}" onclick="AT='${t}';ed=null;render()">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>${AT=='orders'?ordersV():AT=='products'?prodsV():AT=='sales'?salesV():setV()}`}
+function ordersV(){if(!O.length)return '<div class="box muted">No orders yet.</div>';
+ return [...O].sort((a,b)=>b.at.localeCompare(a.at)).map(o=>`<div class="box"><div class="row sp"><b>${E(o.id)}</b><span class="tag s-${o.status}">${o.status}</span></div><div class="muted">${new Date(o.at).toLocaleString('en-IN')}</div>
+ <div><a href="tel:${E(o.phone)}">${E(o.phone)}</a><br>${E(o.addr)} - ${E(o.pin)}</div>
+ <div class="muted">${o.items.map(i=>E(i.name)+' × '+i.q).join(', ')}</div><div><b>${R(o.total)}</b> · COD</div>
+ <div class="row" style="margin-top:8px">${o.status=='Pending'?`<button class="o" onclick="setSt('${o.id}','Accepted')">Accept</button><button class="r" onclick="setSt('${o.id}','Rejected')">Reject</button>`:''}
+ <select style="width:auto" onchange="setSt('${o.id}',this.value)">${ST.map(s=>`<option ${s==o.status?'selected':''}>${s}</option>`).join('')}</select></div></div>`).join('')}
+async function setSt(id,st){const o=O.find(x=>x.id==id),ref=db.doc('orders/'+o.uid+'/o/'+id);try{
+ if(st=='Accepted'&&!o.stockCut){for(const i of o.items){const p=P.find(x=>x.id==i.pid);if(p)await db.doc('products/'+p.id).update({stock:Math.max(0,(Number(p.stock)||0)-i.q)})}await ref.update({status:st,stockCut:true})}
+ else await ref.update({status:st});toast('Order '+id+' → '+st)}catch(e){toast('Failed: '+(e.message||e.code))}}
+function prodsV(){
+ if(ed){const p=ed;return `<div class="box"><h3 style="margin-top:0">${p.id?'Edit':'Add'} product</h3><label>Product name</label><input id="e_n" value="${E(p.name)}"><label>Category</label><input id="e_c" value="${E(p.cat)}" placeholder="e.g. Tile Adhesive"><label>Description</label><textarea id="e_d" rows="4">${E(p.desc)}</textarea>
+ <div class="two"><div><label>Original price (₹)</label><input id="e_m" type="number" value="${p.mrp??''}"></div><div><label>Selling price (₹)</label><input id="e_p" type="number" value="${p.price??''}"></div><div><label>Stock quantity</label><input id="e_s" type="number" value="${p.stock??0}"></div><div><label>Availability</label><select id="e_a"><option value="1" ${p.available!==false?'selected':''}>Available</option><option value="0" ${p.available===false?'selected':''}>Unavailable</option></select></div></div>
+ <label>Photos (max 4)</label><div class="thumbs">${(p.imgs||[]).map((i,k)=>`<div><img src="/_blob/${i}"><br><a href="#" onclick="rmImg(${k});return false">remove</a></div>`).join('')}</div>
+ ${(p.imgs||[]).length<4?'<input type="file" accept="image/*" multiple onchange="upImgs(this)">':''}
+ <div class="row" style="margin-top:12px"><button class="o" onclick="saveP()">Save product</button><button class="g" onclick="keep();ed=null;render()">Cancel</button></div></div>`}
+ return `<button onclick="ed={imgs:[]};render()">+ Add product</button><div class="box tw" style="margin-top:10px"><table><tr><th>Product</th><th>Price</th><th>Stock</th><th></th></tr>${P.map(p=>`<tr><td>${E(p.name)}</td><td>${R(price(p))}</td><td>${p.stock||0}</td><td><button class="g" onclick="ed={...P.find(x=>x.id=='${p.id}')};render()">Edit</button> <button class="r" onclick="delP('${p.id}')">Delete</button></td></tr>`).join('')||'<tr><td colspan="4" class="muted">No products yet.</td></tr>'}</table></div>`}
+function keep(){if(!ed)return;const g=i=>{const e=$('#e_'+i);return e?e.value:null};if(!$('#e_n'))return;Object.assign(ed,{name:g('n'),cat:g('c'),desc:g('d'),mrp:g('m'),price:g('p'),stock:g('s'),available:g('a')!='0'})}
+function rmImg(k){keep();ed.imgs.splice(k,1);render()}
+async function upImgs(inp){keep();if(!assets)return toast('Image upload is not available for this account.');
+ for(const f of [...inp.files]){if(ed.imgs.length>=4)break;try{const r=await assets.upload(f);ed.imgs.push(r.id)}catch(e){toast('Upload failed: '+(e.message||e.code))}}render()}
+async function saveP(){keep();const p=ed;if(!p.name||!(Number(p.price)>0))return toast('Name and selling price are required.');
+ const d={name:p.name.trim(),cat:(p.cat||'').trim(),desc:p.desc||'',mrp:Number(p.mrp)||Number(p.price),price:Number(p.price),stock:Math.max(0,parseInt(p.stock)||0),available:p.available!==false,imgs:(p.imgs||[]).slice(0,4)};
+ try{await(p.id?db.doc('products/'+p.id).set(d):db.collection('products').add(d));ed=null;toast('Product saved')}catch(e){toast('Save failed: '+(e.message||e.code))}}
+async function delP(id){if(confirm('Delete this product permanently?'))try{await db.doc('products/'+id).delete();toast('Deleted')}catch(e){toast('Failed')}}
+function sum(f){return O.filter(o=>del(o)&&f(o.at)).reduce((a,o)=>a+o.total,0)}
+function salesV(){const now=new Date(),d=now.toISOString().slice(0,10),mo=d.slice(0,7),y=d.slice(0,4),cnt=s=>O.filter(o=>o.status==s).length;
+ const sold=O.filter(del).reduce((a,o)=>a+o.items.reduce((b,i)=>b+i.q,0),0),ms=[];
+ for(let i=11;i>=0;i--){const t=new Date(now.getFullYear(),now.getMonth()-i,1),k=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0');ms.push([k,sum(a=>a.slice(0,7)==k)])}
+ const mx=Math.max(1,...ms.map(x=>x[1]));
+ return `<div class="stats"><div class="box">Today<b>${R(sum(a=>a.slice(0,10)==d))}</b></div><div class="box">This month<b>${R(sum(a=>a.slice(0,7)==mo))}</b></div><div class="box">This year<b>${R(sum(a=>a.slice(0,4)==y))}</b></div><div class="box">Total orders<b>${O.length}</b></div><div class="box">Delivered<b>${cnt('Delivered')}</b></div><div class="box">Pending<b>${cnt('Pending')}</b></div><div class="box">Cancelled<b>${cnt('Cancelled')}</b></div><div class="box">Products sold<b>${sold}</b></div></div>
+ <div class="box"><b>Monthly sales (delivered orders only)</b><div class="bars" style="margin:12px 0 26px">${ms.map(x=>`<div style="height:${Math.round(x[1]/mx*100)}%" title="${x[0]}: ${R(x[1])}"><span>${x[0].slice(5)}</span></div>`).join('')}</div><button onclick="csv()">Download report (Excel/CSV)</button></div>`}
+async function csv(){if(!dl)return toast('Download is not available here.');const q=s=>'"'+String(s).replace(/"/g,'""')+'"';
+ const rows=[['Order ID','Date','Customer','Phone','City','Status','Total','Items'],...O.map(o=>[o.id,o.at.slice(0,10),o.name,o.phone,o.city,o.status,o.total,o.items.map(i=>i.name+' x'+i.q).join('; ')])];
+ try{await dl.save({filename:'landgrip-orders-report.csv',data:new Blob(['\ufeff'+rows.map(r=>r.map(q).join(',')).join('\n')],{type:'text/csv'})})}catch(e){if(e.code!='declined')toast('Download failed')}}
+function setV(){return `<div class="box"><b>Google Maps link</b><label>Paste your shop's Google Maps share link</label><input id="mp" value="${E(cfg.maps||'')}" placeholder="https://maps.app.goo.gl/…"><br><br><button onclick="saveMap()">Save</button></div>
+ <div class="box muted">Admin access is tied to the owner's signed-in claude.ai account; there is no separate username/password on this version.</div>`}
+async function saveMap(){const v=$('#mp').value.trim();if(v&&!/^https:\/\//.test(v))return toast('Link must start with https://');try{await db.doc('settings/site').set({maps:v});toast('Saved')}catch(e){toast('Failed')}}
+/* ---------- boot ---------- */
+(async()=>{
+ render();
+ try{if(window.claude){user=await claude.use('user');db=await claude.use('db');assets=await claude.use('assets');dl=await claude.use('downloads');admin=!!(user&&await user.canEdit());uid=user?await user.id():null}}catch(e){}
+ if(!db)return render();
+ const er=()=>{};
+ db.collection('products').onSnapshot(s=>{P=s.docs.map(d=>({id:d.id,...d.data()}));if(!ed)render()},er);
+ db.doc('settings/site').onSnapshot(s=>{cfg=s.data()||{};if(!ed)render()},er);
+ if(admin){const subs={},by={};db.collection('orders').onSnapshot(s=>{s.docs.forEach(d=>{if(subs[d.id])return;subs[d.id]=1;db.collection('orders/'+d.id+'/o').onSnapshot(t=>{by[d.id]=t.docs.map(x=>({id:x.id,...x.data()}));O=Object.values(by).flat();if(!ed)render()},er)})},er)}
+ render();
+})();
+</script></body></html>
